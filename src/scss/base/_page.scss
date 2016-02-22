@@ -1,0 +1,40 @@
+/**
+ * base/_page.scss
+ */
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+
+/**
+ * Set font defaults, base colours and high-level page stylings
+ */
+
+html {
+  font: 400 #{($base-font-size/16px)*1em}/#{$base-line-height/$base-font-size} $base-font;
+  font-feature-settings: 'swsh';
+  color: color(text-color);
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+
+/**
+ * Set base branded user interactions
+ */
+
+::-moz-selection {
+  background-color: color(brand, primary);
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: color(brand, primary);
+  color: #fff;
+  text-shadow: none;
+}
+
+:focus{
+  outline: color(brand, primary) auto 5px;
+}

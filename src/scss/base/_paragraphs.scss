@@ -1,0 +1,16 @@
+/**
+ * base/_paragraphs.scss
+ */
+
+/* ==========================================================================
+   Paragraphs
+   ========================================================================== */
+
+/**
+ * The `.lede` class is used to make the introductory text (usually a paragraph)
+ * of a document slightly larger: en.wikipedia.org/wiki/Lede_(news)
+ */
+
+.lede, %lede {
+  @include font-size(18px, (32px / 18px));
+}

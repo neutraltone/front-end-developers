@@ -1,0 +1,53 @@
+/**
+ * base/_headings.scss
+ */
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+/**
+ * Headings
+ */
+
+h1, .alpha, %alpha,
+h2, .beta, %beta,
+h3, .gamma, %gamma,
+h4, .delta, %delta,
+h5, .epsilon, %epsilon,
+h6, .zeta, %zeta {
+  font-family: $font-primary;
+}
+
+h1, .alpha, %alpha {
+  @include font-size(60px);
+}
+
+h2, .beta, %beta {
+  @include font-size(48px);
+}
+
+h3, .gamma, %gamma {
+  @include font-size(38px);
+}
+
+h4, .delta, %delta {
+  @include font-size(30px);
+}
+
+h5, .epsilon, %epsilon {
+  @include font-size(24px);
+}
+
+h6, .zeta, %zeta {
+  @include font-size(18px);
+}
+
+
+/**
+ * Extra large sizes
+ */
+
+.mega, %mega {
+  font-size: font-size(75px);
+}

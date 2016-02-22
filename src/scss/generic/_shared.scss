@@ -1,0 +1,17 @@
+/**
+ * generic/_shared.scss
+ */
+
+/* ==========================================================================
+   Shared
+   ========================================================================== */
+
+/**
+ * Setup consistent left padding for lists
+ */
+
+ol, ul, dd,
+%margin-left {
+  padding-left: double($base-spacing-unit);
+  padding-left: (double($base-spacing-unit) / $base-font-size) * 1em;
+}

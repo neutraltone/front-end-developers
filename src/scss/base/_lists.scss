@@ -1,0 +1,27 @@
+/**
+ * base/_lists.scss
+ */
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Remove margin from nested lists
+ */
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+/**
+ * Styled nested numbered lists
+ */
+
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
