@@ -205,23 +205,14 @@ gulp.task('images', () => {
  */
 
 gulp.task('svg-sprite', () => {
-  return gulp.src(spritePath.src).pipe(svgmin(file => {
-    const prefix = path.basename(file.relative, path.extname(file.relative));
-    return {
-      plugins: [{
-        cleanupIDs: {
-          prefix: `${ prefix }-`,
-          minify: true
-        }
-      }]
-    };
-  }))
-  .pipe(svgstore())
-  .pipe(cheerio(function ($) {
-    $('svg').attr('style',  'display:none');
-  }))
-  .pipe(gulp.dest(spritePath.dest))
-  .pipe(browserSync.stream())
+  return gulp.src(spritePath.src)
+    .pipe(svgmin())
+    .pipe(svgstore())
+    .pipe(cheerio(function ($) {
+      $('svg').attr('style',  'display:none');
+    }))
+    .pipe(gulp.dest(spritePath.dest))
+    .pipe(browserSync.stream())
 });
 
 
