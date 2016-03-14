@@ -8,6 +8,7 @@ import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import cheerio from 'gulp-cheerio';
 import concat from 'gulp-concat';
+import babel from 'gulp-babel';
 import eslint from 'gulp-eslint';
 import header from 'gulp-header';
 import imagemin from 'gulp-imagemin';
@@ -159,6 +160,10 @@ gulp.task('js', () => {
   return gulp.src(jsPath.src)
     .pipe(eslint())
     .pipe(eslint.format())
+		.pipe(sourcemaps.init())
+		.pipe(babel({
+			presets: ['es2015']
+		}))
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(header(banner, { pkg : pkg }))
