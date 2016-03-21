@@ -1,0 +1,19 @@
+/**
+ * generic/_wrapper.scss
+ */
+
+/* ==========================================================================
+   Wrapper
+   ========================================================================== */
+
+/**
+ * Wrapper gradient styles
+ */
+
+.wrapper--day {
+  background-image: linear-gradient( 135deg, color(gradient, day-start), color(gradient, day-stop) );
+}
+
+.wrapper--night {
+  background-image: linear-gradient( 135deg, color(gradient, night-start), color(gradient, night-stop) );
+}

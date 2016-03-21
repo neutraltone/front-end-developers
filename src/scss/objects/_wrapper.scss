@@ -1,0 +1,19 @@
+/**
+ * objects/_wrapper.scss
+ */
+
+/* ==========================================================================
+   Wrapper
+   ========================================================================== */
+
+/**
+ * Size and position wrapper
+ */
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px;
+  overflow: hidden;
+}

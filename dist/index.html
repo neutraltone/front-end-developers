@@ -49,8 +49,13 @@
     <link rel="manifest" href="/manifest.json">
 
     <!-- DNS Prefetch -->
+    <link href="//use.typekit.net" rel="dns-prefetch">
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
+
+    <!-- Typekit -->
+    <script src="https://use.typekit.net/iuq6ixr.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <!-- Stylesheets -->
     <link href="/assets/css/critical.min.css" rel="stylesheet">
@@ -76,68 +81,52 @@
 
   <body>
 
-    <!-- Header: .header -->
-    <header class="header" role="banner">
+    <div class="wrapper  wrapper--night">
 
-      <div class="logo">
-        <a href="/">
-          <img src="assets/img/logo.svg" width="200" height="42" alt="Logo">
-        </a>
-      </div>
+      <!-- Header: .header -->
+      <header class="header" role="banner">
 
-    </header>
-    <!-- //Header: .header -->
+        <svg class="corner">
+          <use xlink:href="#corner">
+        </svg>
 
+        <div class="logo">
+          <a href="/">
+            <img class="logo__image" src="assets/img/logo.svg" alt="Front End Developers">
+          </a>
+        </div>
 
-    <!-- Primary Content: .main -->
-    <main class="main" role="main">
-
-      <h1>HTML Ipsum Presents</h1>
-
-      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-      <h2>Header Level 2</h2>
-
-      <ol>
-         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-         <li>Aliquam tincidunt mauris eu risus.</li>
-      </ol>
-
-      <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-      <h3>Header Level 3</h3>
-
-      <ul>
-         <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-         <li>Aliquam tincidunt mauris eu risus.</li>
-      </ul>
-
-      <pre><code>
-      #header h1 a {
-      	display: block;
-      	width: 300px;
-      	height: 80px;
-      }
-      </code></pre>
-
-      <a href="#" class="btn">this is a button</a>
-
-    </main>
-    <!-- //Primary Content: .main -->
+      </header>
+      <!-- //Header: .header -->
 
 
-    <!-- Secondary Content: .sidebar -->
-    <aside class="sidebar" role="complementary">
+      <!-- Primary Content: .main -->
+      <main class="main" role="main">
 
-    </aside>
-    <!-- //Secondary Content: .sidebar -->
+        <div class="introduction  container">
+          <p class="beta">A Slack powered community for creative developers to share knowledge</p>
+          <a href="#" class="btn">Join {{ number }} front end developers</a>
+        </div>
+
+        <svg class="stars">
+          <use xlink:href="#stars">
+        </svg>
+
+        <svg class="mountains">
+          <use xlink:href="#mountains">
+        </svg>
+
+      </main>
+      <!-- //Primary Content: .main -->
 
 
-    <!-- Footer: //.footer -->
-    <footer class="footer" role="contentinfo">
+      <!-- Footer: //.footer -->
+      <footer class="footer" role="contentinfo">
 
-    </footer>
-    <!-- Footer: //.footer -->
+      </footer>
+      <!-- Footer: //.footer -->
+
+    </div>
 
 
     <!-- Scripts -->

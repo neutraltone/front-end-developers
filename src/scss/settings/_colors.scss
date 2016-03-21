@@ -12,7 +12,7 @@
 
 $colors: (
   // Base colors
-  text-color:       #595657,
+  text-color:       #fff,
   text-color--dark: #28282e,
   background-color: #fff,
 
@@ -28,6 +28,14 @@ $colors: (
     secondary:  #28282e,
     tertiary:   #c4c4c5,
     quaternary: #f5f5f5
+  ),
+
+  // Gradients
+  gradient: (
+    day-start: #c2e59c,
+    day-stop: #64b3f4,
+    night-start: #859398,
+    night-stop: #283048
   ),
 
   // Social colors

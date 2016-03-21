@@ -13,7 +13,7 @@
 $base-font-size:              18px;
 $base-line-height:            24px;
 $base-spacing-unit:           24px;
-$base-container-width:	      1024px;
+$base-container-width:	      1280px;
 $base-container-gutter:       $base-spacing-unit;
 $base-font:                   'Helvetica Neue';
 $base-anim-duration:          300ms;
@@ -25,5 +25,5 @@ $base-anim-easing-alt:        cubic-bezier(.175, .885, .32, 1.275);
  * Typography
  */
 
-$font-primary:   'Helvetica Neue', helvetica, arial, san-serif;
-$font-secondary: 'Helvetica Neue', helvetica, arial, san-serif;
+$font-primary:   'europa', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-secondary: 'inconsolata', 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;

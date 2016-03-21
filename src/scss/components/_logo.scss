@@ -1,0 +1,23 @@
+/**
+ * generic/_logo.scss
+ */
+
+/* ==========================================================================
+   Main logo Element
+   ========================================================================== */
+
+/**
+ * Logo
+ */
+
+.logo {
+  position: relative;
+  z-index: 1;
+
+  &__image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 736px;
+  }
+}

@@ -10,7 +10,12 @@
  * Set font defaults, base colours and high-level page stylings
  */
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
+  box-sizing: border-box;
   font: 400 #{($base-font-size/16px)*1em}/#{$base-line-height/$base-font-size} $base-font;
   font-feature-settings: 'swsh';
   color: color(text-color);

@@ -1,0 +1,48 @@
+/**
+ * generic/_illustrations.scss
+ */
+
+/* ==========================================================================
+   Illustrative elements
+   ========================================================================== */
+
+/**
+ * Corner
+ */
+
+.corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/**
+ * Stars
+ */
+
+.stars {
+  position: absolute;
+  top: -90%;
+  right: -90%;
+  width: 180%;
+  height: 180%;
+}
+
+
+
+/**
+ * Mountains
+ */
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 825px;
+  height: 525px;
+}

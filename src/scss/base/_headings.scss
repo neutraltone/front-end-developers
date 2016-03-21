@@ -17,30 +17,31 @@ h4, .delta, %delta,
 h5, .epsilon, %epsilon,
 h6, .zeta, %zeta {
   font-family: $font-primary;
+  font-weight: 300;
 }
 
 h1, .alpha, %alpha {
-  @include font-size(60px);
+  @include font-size(60px, 1.5);
 }
 
 h2, .beta, %beta {
-  @include font-size(48px);
+  @include font-size(48px, 1.5);
 }
 
 h3, .gamma, %gamma {
-  @include font-size(38px);
+  @include font-size(38px, 1.5);
 }
 
 h4, .delta, %delta {
-  @include font-size(30px);
+  @include font-size(30px, 1.5);
 }
 
 h5, .epsilon, %epsilon {
-  @include font-size(24px);
+  @include font-size(24px, 1.5);
 }
 
 h6, .zeta, %zeta {
-  @include font-size(18px);
+  @include font-size(18px, 1.5);
 }
 
 
