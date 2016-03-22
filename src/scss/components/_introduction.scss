@@ -1,13 +1,18 @@
 /**
- * components/_critical.scss
+ * generic/_introduction.scss
  */
 
 /* ==========================================================================
-   Imports
+   Introductory text
    ========================================================================== */
 
-@import 'wrapper';
-@import 'logo';
-@import 'illustrations';
-@import 'introduction';
-@import 'buttons';
+/**
+ * Introduction
+ */
+
+.introduction {
+  @include vertical-align();
+
+  z-index: 2;
+}
+
