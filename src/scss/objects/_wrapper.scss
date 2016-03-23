@@ -12,8 +12,16 @@
 
 .wrapper {
   position: relative;
+  padding: $base-spacing-unit;
   width: 100vw;
   height: 100vh;
-  padding: 100px;
   overflow: hidden;
+
+  @include media-query(lap) {
+    padding: 50px;
+  }
+
+  @include media-query(desk) {
+    padding: 100px;
+  }
 }
