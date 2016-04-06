@@ -208,9 +208,7 @@ gulp.task('svg-sprite', () => {
   return gulp.src(spritePath.src)
     .pipe(svgmin())
     .pipe(svgstore())
-    .pipe(cheerio(function ($) {
-      $('svg').attr('style',  'display:none');
-    }))
+    .pipe(cheerio($ => $('svg').attr('style',  'display:none')))
     .pipe(gulp.dest(spritePath.dest))
     .pipe(browserSync.stream())
 });
