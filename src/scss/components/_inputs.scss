@@ -1,0 +1,53 @@
+/**
+ * generic/_inputs.scss
+ */
+
+/* ==========================================================================
+   Natural language inputs
+   ========================================================================== */
+
+/**
+ * Base inputs
+ */
+
+.input {
+  position: relative;
+  display: inline;
+  opacity: .4;
+  border-bottom: 2px dashed color(bw, white);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+
+/**
+ * Text input
+ */
+
+.input__text {
+  display: inline-block;
+  background-color: rgba(255,255,255,.1);
+}
+
+  .input__text-input {
+    padding: 1em 2em;
+    color: color(bw, white);
+    background-color: transparent;
+    border: none;
+  }
+
+
+
+/**
+ * Input button
+ */
+
+.input__button {
+  padding: 1em 1.5em;
+  color: color(bw, white);
+  background-color: rgba(255,255,255,.1);
+  border: none;
+}

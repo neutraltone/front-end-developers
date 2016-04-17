@@ -15,9 +15,8 @@
   z-index: 1;
 
   &__image {
-    display: block;
+    max-width: 736px;
     width: auto;
     height: auto;
-    max-width: 736px;
   }
 }

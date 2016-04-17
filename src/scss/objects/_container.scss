@@ -12,9 +12,11 @@
 
 .container,
 %container {
-  //padding-left: $base-container-gutter;
-  //padding-right: $base-container-gutter;
   max-width: $base-container-width;
+
+  &--lrg {
+    max-width: $base-container-width-lrg;
+  }
 }
 
 
@@ -25,6 +27,4 @@
 .container--full,
 %container--full {
   max-width: none;
-  //padding-left: $base-container-width;
-  //padding-right: $base-container-width;
 }

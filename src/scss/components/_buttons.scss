@@ -15,16 +15,9 @@
 
   position: relative;
   display: inline-block;
-  padding: 1em 1.5em;
+  padding: 1em 2em;
   font-family: $font-secondary;
   background-color: transparent;
-
-  &__corner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
 }
 
 

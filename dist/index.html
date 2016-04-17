@@ -100,30 +100,41 @@
       <!-- //Header: .header -->
 
 
-      <!-- Primary Content: .main -->
-      <main class="main" role="main">
+      <!-- Primary Content: .primary-content -->
+      <main class="primary-content" role="main">
 
         <div class="introduction  container">
-          <p class="beta">A Slack powered community for creative developers to share knowledge</p>
+          <div class="beta">A Slack powered community for creative developers to share knowledge</div>
           <a href="#" class="btn  btn--primary">
-            <svg class="btn__corner" viewBox="0 0 100 100">
-              <use xlink:href="#corner">
-            </svg>
             Join 4,987 front end developers
           </a>
         </div>
 
-        <svg class="stars">
-          <use xlink:href="#stars">
-        </svg>
-
-        <svg class="mountains">
-          <use xlink:href="#mountains">
-        </svg>
+        <div class="signup  container  container--lrg">
+          <form>
+            <div class="beta">Hi, I am <div class="input  input--text">John Smith</div> and my email address is <div class="input  input--text">john@smith.com</div>. I’m looking to join 2,758 other front end developers to discuss my practice and expand my skills.</div>
+            <div class="input__text">
+              <input class="input__text-input" type="text" placeholder="John Smith" />
+              <button class="input__button">&#9654;</button>
+            </div>
+            <div class="input__text">
+              <input class="input__text-input" type="email" placeholder="john@smith.com" />
+              <button class="input__button">&#9654;</button>
+            </div>
+            <input type="submit">
+          </form>
+        </div>
 
       </main>
-      <!-- //Primary Content: .main -->
+      <!-- //Primary Content: .primary-content -->
 
+      <svg class="stars">
+        <use xlink:href="#stars">
+      </svg>
+
+      <svg class="mountains">
+        <use xlink:href="#mountains">
+      </svg>
 
       <!-- Footer: //.footer -->
       <footer class="footer" role="contentinfo">
@@ -147,7 +158,7 @@
       ga('create', 'UA-XXXXX-X', 'auto');
       ga('send', 'pageview');
     </script>
-    <!-- //Scripts -->
+    <!-- //Scripts <--></-->
 
   </body>
 </html>
